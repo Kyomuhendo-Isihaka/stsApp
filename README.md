@@ -1,0 +1,2 @@
+# stsApp
+Education platiform
