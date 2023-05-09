@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card text-center mt-2 h-300 me-5 mr-5" style="width: 100%; padding: 10px; margin-left: auto; margin-right: auto;">
+        <div class="card-body">
+          <h5 class="card-title">Welcome to StudySphere</h5>
+          <p class="card-text">Click the button below to upload a file</p>
+          <a href="{% url 'Checkplag' %}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></a>
+        </div>
+        <div class="card-body" >
+<!--            <div class="up">-->
+<!--                <form action="file-upload.php" method="POST" enctype="multipart/form-data">-->
+<!--                    <input type="file" name="fileToUpload" id="fileToUpload" >-->
+<!--                    <input type="submit" value="Upload File"id="upload" name="submit" class="upload">-->
+<!--                  </form>-->
+<!--            </div>-->
+        </div>
+    </div>
+<div class="card text-center mt-2" style="height: 425px;">
+  <div class="card-header"><h3>Research</h3></div>
+  <div class="card-body">
+    <h5 class="card-title">Resource Library</h5>
+    <p class="card-text">Vist our Library to carry out research<br>Categorized Text books and Citations</p>
+    <a href="#" class="btn btn-primary">Visit</a>
+  </div>
+  <div class="card-footer text-muted"> Free Books and Library</div>
+</div>
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class=" w3-card-2 w3-round-xlarge w-50 mx-auto mt-5 h-100 p-2">
+    <p class="w3-center mb-5 mt-2 " style="font-size:20px ;"><b>Type/Upload a file</b></p>
+    <form action="/results/" method="POST" enctype="multipart/form-data" class="m-5">
+        {% csrf_token %}
+        <div class="row mx-auto">
+            <div class="col-md-6 col-sm-6">
+                <label ><b>Upload File</b></label><br>
+                <label for="file"><i class="fa fa-upload" style="font-size:20px;"></i></label>
+
+                <input type="file" name="file" id="file" style="display:none">
+            </div>
+        </div>
+        <div class="mt-4 mb-5 mx-auto w3-center">
+            <input type="submit" value="Check Plagiarism" name="submit" class="btn w-50 mb-4 btn-primary mx-auto" id="">
+        </div>
+    </form>
+</div>
+
+{% endblock content %}
